@@ -14,9 +14,10 @@
 #include "base/synchronization/lock.h"
 #include "build/build_config.h"
 
-#if defined(OS_ANDROID) && defined(ARCH_CPU_ARMEL)
-#include <cpu-features.h>
-#endif
+// breaks build is not included in CM
+// #if defined(OS_ANDROID) && defined(ARCH_CPU_ARMEL)
+// #include <cpu-features.h>
+// #endif
 
 namespace crypto {
 
